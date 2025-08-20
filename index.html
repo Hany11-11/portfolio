@@ -21,7 +21,22 @@
         </nav>
         <section class="hero glass">
             <img src="assets/profile.jpg" alt="Avatar" class="avatar">
-            <h1>Hi, I'm <span class="accent">Ratnasothy Hariram</span></h1>
+            <h1>Hi, I'm <span class="accent" id="animated-name">Ratnasothy Hariram</span></h1>
+            <script>
+                const name = "Ratnasothy Hariram";
+                const target = document.getElementById("animated-name");
+                let i = 0;
+                function typeLetter() {
+                    if (i <= name.length) {
+                        target.textContent = name.slice(0, i);
+                        i++;
+                        if (i <= name.length) {
+                            setTimeout(typeLetter,100);
+                        }
+                    }
+                }
+                typeLetter();
+            </script>
             <p class="subtitle">Creative Web Developer & Designer</p>
             <a href="#projects" class="btn pulse">View My Work</a>
         </section>
@@ -36,20 +51,20 @@
             <div class="project-list">
                 <div class="project-card">
                     <img src="assets/traffic-demo.png" alt="Project One">
-                    <h3>Project One</h3>
-                    <p>Modern landing page with animated interactions.</p>
+                    <h3>Motor Traffic Violation Fine Management System</h3>
+                    <p>Web application for managing traffic violations and fines.</p>
                 </div>
                 <div class="project-card">
                     <img src="assets/dashboard-demo.png" alt="Project Two">
-                    <h3>Project Two</h3>
-                    <p>Responsive dashboard UI for analytics.</p>
+                    <h3>Dashboard Editor</h3>
+                    <p>Web application for creating and managing dashboards.</p>
                 </div>
                 <!-- Add more projects as needed -->
             </div>
         </section>
         <section id="contact" class="glass">
             <h2>Contact</h2>
-            <form>
+            <form id="contact-form"></form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
