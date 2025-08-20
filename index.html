@@ -37,18 +37,25 @@
             <h2>Projects</h2>
             <div class="project-list">
                 <div class="project-card">
-                    <img src="assets/traffic-demo.png" alt="Project One">
+                    <img src="assets/traffic-demo.png" alt="Project One" class="popup-img">
                     <h3>Motor Traffic Violation Fine Management System</h3>
                     <p>Web application for managing traffic violations and fines.</p>
                 </div>
                 <div class="project-card">
-                    <img src="assets/dashboard-demo.png" alt="Project Two">
+                    <img src="assets/dashboard-demo.png" alt="Project Two" class="popup-img">
                     <h3>Dashboard Editor</h3>
                     <p>Web application for creating and managing dashboards.</p>
                 </div>
                 <!-- Add more projects as needed -->
             </div>
+
+            <div id="imgModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="imgInModal">
+                <div id="caption"></div>
+            </div>
         </section>
+        
         <section id="contact" class="glass">
             <h2>Contact</h2>
             <form name="contact" method="POST" data-netlify="true">
