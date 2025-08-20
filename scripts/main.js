@@ -15,20 +15,25 @@ document.querySelector('form')?.addEventListener('submit', function(e) {
     this.reset();
 });
 
-  var modal = document.getElementById("imgModal");
-  var modalImg = document.getElementById("imgInModal");
-  var captionText = document.getElementById("caption");
+var modal = document.getElementById("imgModal");
+var modalImg = document.getElementById("imgInModal");
+var captionText = document.getElementById("caption");
 
-  // Attach click to all project images
-  document.querySelectorAll(".popup-img").forEach(img => {
-    img.addEventListener("click", function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    });
+document.querySelectorAll(".popup-img").forEach(img => {
+  img.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+    document.body.classList.add("no-scroll");
   });
+});
 
-  // Close modal
-  document.querySelector(".close").onclick = function() {
-    modal.style.display = "none";
-  }
+
+document.querySelector(".close").onclick = function() {
+  modal.style.display = "none";
+
+  document.body.classList.remove("no-scroll");
+}
+
+  

@@ -16,6 +16,7 @@ body {
     position: relative;
     min-height: 100vh;
     overflow-x: hidden;
+    cursor: url('cursor.png'), auto;
 }
 
 .background-gradient {
@@ -270,24 +271,8 @@ footer {
     filter: brightness(1.2);
 }
 
-@media (max-width: 600px){
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    .avatar {
-        width: 250px;
-        height: 250px;
-    }
-    .project-card img {
-        height: 180px;
-    }
-    .btn {
-        padding: 0.8rem 1.8rem;
-    }
+body.no-scroll {
+  overflow: hidden;
 }
 
 .modal {
@@ -325,3 +310,36 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 600px){
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .avatar {
+        width: 250px;
+        height: 250px;
+    }
+    .project-card img {
+        height: 180px;
+    }
+    .btn {
+        padding: 0.8rem 1.8rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
