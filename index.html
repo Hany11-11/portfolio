@@ -49,13 +49,27 @@
         </section>
         <section id="contact" class="glass">
             <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                
                 <button type="submit" class="btn pulse">Send</button>
             </form>
         </section>
+
+        <section class="glass">
+            <h2 align="center">Connect with Me</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61571800407969" target="_blank"><img src="assets/facebook.svg" alt=""></a>
+                <a href="https://linkedin.com/in/hany02" target="_blank"><img src="assets/linkedin.svg" alt=""></a>
+                <a href="https://github.com/Hany11-11" target="_blank"><img src="assets/github.svg" alt=""></a>
+            </div>
+        </section>
+
+
     </main>
     <footer class="glass">
         <p>&copy; 2025 Ratnasothy Hariram. All rights reserved.</p>

@@ -244,3 +244,19 @@ footer {
     box-shadow: var(--shadow);
     font-size: 1rem;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.social-links img {
+    transition: transform 0.2s;
+    width: 50px;
+    height: 50px;
+}
+.social-links img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
