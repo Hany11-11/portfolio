@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Hariram's Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
@@ -21,22 +21,7 @@
         </nav>
         <section class="hero glass">
             <img src="assets/profile.jpg" alt="Avatar" class="avatar">
-            <h1>Hi, I'm <span class="accent" id="animated-name">Ratnasothy Hariram</span></h1>
-            <script>
-                const name = "Ratnasothy Hariram";
-                const target = document.getElementById("animated-name");
-                let i = 0;
-                function typeLetter() {
-                    if (i <= name.length) {
-                        target.textContent = name.slice(0, i);
-                        i++;
-                        if (i <= name.length) {
-                            setTimeout(typeLetter,100);
-                        }
-                    }
-                }
-                typeLetter();
-            </script>
+            <h1>Hi, I'm <span class="accent">Ratnasothy Hariram</span></h1>
             <p class="subtitle">Creative Web Developer & Designer</p>
             <a href="#projects" class="btn pulse">View My Work</a>
         </section>
@@ -64,7 +49,7 @@
         </section>
         <section id="contact" class="glass">
             <h2>Contact</h2>
-            <form id="contact-form"></form>
+            <form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
