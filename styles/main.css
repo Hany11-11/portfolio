@@ -112,6 +112,11 @@ nav a:hover::after {
     background: var(--glass);
 }
 
+.avatar:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px 0 rgba(206, 206, 255, 0.837);
+}
+
 .hero h1 {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
@@ -206,7 +211,7 @@ h3 {
 .project-card img {
     width: 100%;
     height: 200px;
-    object-fit: contain;
+    object-fit:fill;
     cursor: pointer;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -215,7 +220,7 @@ h3 {
 
 .project-card:hover {
     transform: translateY(-7px) scale(1.04);
-    box-shadow: 0 12px 40px rgba(127,90,240,0.25);
+    box-shadow: 0 12px 40px rgb(165, 153, 200);
 }
 
 form {
@@ -267,8 +272,8 @@ footer {
     height: 50px;
 }
 .social-links img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
+    transform: translateY(-7px) scale(1.04);
+    filter: drop-shadow(10px 10px 20px rgb(165, 153, 200));
 }
 
 body.no-scroll {
